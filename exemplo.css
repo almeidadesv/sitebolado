@@ -1,0 +1,19 @@
+.pai {
+    background-color: aqua;
+    border: 1px solid blue;
+    height: 700px;
+    width: auto;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+.filho {
+    background-color: black;
+    color: aliceblue;
+    border: 1px solid white;
+    width: 220px;
+    height: 199px;
+}
+
+
