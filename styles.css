@@ -1,26 +1,38 @@
-html {
+html, body {
     font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .comeco {
     background-color: rgb(1, 54, 34);
     color: white;
-    height: 300px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 15px;
 }
+
 
 .facebook, .instagram, .youtube {
-    width: 50px;
+    width: 30px;
 }
 
-.logo {
-    width: 200px;
+.tudo {
+    flex: 1;
 }
 
 .logo {
     width: 80px;
+    position: absolute;
+    left: 0%;
 }
 
 .cabecalho {
@@ -29,10 +41,26 @@ html {
     gap: 20px;
     align-items: center;
     margin: 5px;
+    padding: 8px;
 }
 
 .home, .sobre, .contato, .botao{
     text-decoration: none;
+}
+
+.menu-link {
+    color: rgb(15, 15, 190);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    display: inline-block;
+}
+
+.menu-link:hover {
+    background-color: rgb(15, 15, 190);
+    color: white;
 }
 
 .botao {
@@ -42,18 +70,7 @@ html {
     padding: 8px;
     border-radius: 5px;
 }
-.home {
-    color: white;
-    background-color: rgb(15, 15, 190);
-    padding: 8px;
-    border-radius: 5px;
-    font-weight: bolder;
-}
 
-.sobre, .contato {
-    color: rgb(15, 15, 190);
-    font-weight: bolder;
-}
 
 .titulo2 {
     display: flex;
@@ -63,25 +80,91 @@ html {
 }
 
 .pai{
+    background-color: rgb(236, 236, 236);
     display: flex;
-    gap: 30px;
+    gap: 25px;
     justify-content: center;
     align-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .filho {
+    background-color: white;
     border: 1px solid rgb(209, 209, 209);
-    padding: 30px;
+    padding: 20px;
     border-radius: 15px;
-    box-shadow: 1px 2px 1px 1px rgb(235, 235, 235);
+    box-shadow: 1px 2px 1px 1px rgb(201, 201, 201);
 }
 
 .titulos {
     font-weight: bolder;
 }
 
-.redesosociais {
-    background-color: gray; 
+.redessociais {
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
 
+.icones {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.finalzinho {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo2 {
+    padding: 8px
+
+}
+
+.titulo2 h2 {
+    margin-bottom: 0;
+}
+
+.titulo2 p {
+    margin-top: 5px; 
+}
+
+.form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.botaoenviar {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.sobrenos {
+    max-width: 850px;   
+    margin: 0 auto;   
+    padding: 50px 0;    
+}
+
+.sobrenos p {
+    line-height: 2.0;    
+    margin-bottom: 40px; 
+    text-align: justify; 
+}
+
+.sobrenos h2 {
+    margin-bottom: 30px; 
+    font-size: 2.2rem;
+}
